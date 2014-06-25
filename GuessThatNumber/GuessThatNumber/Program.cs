@@ -35,8 +35,10 @@ namespace GuessThatNumber
             //infinite loop of user input
             while (looping)
             {
+                //this needs to be in front of everything to set the input
                 input = Console.ReadLine();
 
+                //this is the validator of the input to see if it is a number or not
                 if ("qwertyuiopasdfghjklzxcvbnm~`!@#$%^&*()_-+=QWERTYUIOP{}|[]\\ASDFGHJKL:;\"\'ZXCVBNM<>?,./".Contains(input))
                 {
                     Console.WriteLine("Sorry, not a number.Try again.");
@@ -45,10 +47,12 @@ namespace GuessThatNumber
                 }
 
                 
-                
+                //convert the correct input to a number
                     int number = Convert.ToInt32(input);
 
+                //input has been set so add a guess
                     guessCount++;
+
                     //condition to compare the input with the randNum
                     if (number == randNum)
                     {
@@ -84,7 +88,7 @@ namespace GuessThatNumber
                 //set up new game
                 if (input2 == "Yes" ||input2 == "yes" || input2 == "Y" || input2 == "y")
                 {
-                    Console.WriteLine("Put in another guess");
+                    Console.WriteLine("Put in another guess.");
                     GuessThatNumber("");
                 }
                 else
