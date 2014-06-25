@@ -14,7 +14,7 @@ namespace GuessThatNumber
             Console.WriteLine("CALLING FUNCTIONS*******");
             Console.WriteLine();
 
-            Console.WriteLine("Guess that Number!");
+            Console.WriteLine("Guess that Number!\nAnywhere from 1 to 100");
             GuessThatNumber("");
 
             //keeps conosle open
